@@ -1,0 +1,18 @@
+<!-- <p>add-todo-form works!</p> -->
+<form>
+    <div class="input-group mb-3">
+        <input 
+            type="text"
+            name="inputTodo"
+            placeholder="Enter todo ..."
+            class="form-control mx-2"
+            [(ngModel)]="inputTodo"
+        />
+        <input 
+            type="submit"
+            value="Add Todo"
+            class="btn btn-primary mx-2"
+            (click)="addTodo()"
+        />
+    </div>
+</form>
